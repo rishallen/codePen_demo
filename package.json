@@ -1,0 +1,33 @@
+{
+  "name": "pattern-library",
+  "version": "1.0.0",
+  "description": "pattern landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IndigoSlate/pattern-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IndigoSlate/pattern-library/issues"
+  },
+  "homepage": "https://github.com/IndigoSlate/pattern-library#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-strip-comments": "^2.4.3"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.6.0"
+  }
+}

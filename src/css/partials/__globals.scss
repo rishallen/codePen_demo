@@ -1,0 +1,63 @@
+/* Globals
+*************************************************/
+$light-blue: #7B9DBB;
+$dark-blue: #185A94;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header {
+  background-color: #fff;
+  height: 90px;
+  h1 {
+    color: #000;
+  }
+}
+
+.panel {
+  position: relative;
+
+  border: 1px solid red;
+}
+.panel__content {
+  max-width: 1440px;
+  margin: 0 auto; // center align
+
+  border: 1px solid green;
+}
+.panel__layout {
+  max-width: 1540px;
+  margin: 0 auto; //center align
+
+  border: 2px solid orange;
+}
+.panel-title {
+    color: #fff;
+    padding-bottom: 15px;
+    h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300px;
+    }
+}
