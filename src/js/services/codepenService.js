@@ -1,6 +1,6 @@
 routerApp.service('CodePen', ['$http', function($http){
-  this.getPens = getPens; //reference to scope Class Method
-  function getPens() {
+  this.getPens2 = getPens1; //reference to scope Class Method
+  function getPens1() {
     // console.log('ey');
     return $http({
       method: "GET",

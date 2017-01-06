@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "angular": "^1.5.5",
-    "angular-route": "^1.6.0"
+    "angular-route": "^1.6.0",
+    "bourbon": "^4.2.7",
   }
 }

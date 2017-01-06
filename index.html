@@ -8,6 +8,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 
         <link rel='stylesheet' type='text/css'href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600'>
+        <link type="text/css" rel="Stylesheet" href="build/css/main.css" />
+
         <link rel='stylesheet' href='build/css/main.css'>
         <script src="node_modules/angular/angular.js"></script>
         <script src="node_modules/angular-route/angular-route.js"></script>
@@ -18,42 +20,54 @@
         <!-- RESPONSIVE IMAGE POLYFILL FOR <picture>, srcset, AND sizes -->
         <!-- <script src='src/js/vendor/picturefill.js'></script> -->
     </head>
+
     <body ng-app="routerApp">
   <!--[if lt IE 8]>
     <p class='browserupgrade'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header">
-      <h1>Pattern Library</h1>
-    </header>
+    <section class="header">
+      <div class="panel_title">
+        <h1 class="panel__content">Pattern Library</h1>
+      </div>
+    </section>
+    <section class="panel">
+      <article>
+        <div class="panel__content panel_title">
+          <h2>Code Pens Navbar</h2>
+        </div>
+      </article>
+    </section>
 
-    <div ng-controller='PenListCtrl'>
-      <ul class="thumbnails">
-        <li class="thumbnail" ng-repeat="pen in pens">
-          <p>See the Pen{{pen.title}}</a></p>
-          <!-- <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script> -->
-          <!-- <div class="pen-details" ng-show="showDetails">
-              <a href="http://codepen.io/IndigoSlate/pen/{{pen.id}}/">{{pen.id}}</a> </p>
-          <div> -->
-        </li>
-      </ul>
+    <main role="main" ng-controller='PenListCtrl'>
+      <div class="flex-container parent panel__content">
+        <!-- <p><input type="text" ng-model="penTitle.title"></p> -->
+          <nav role="navigation" class="flex-item1 child">
+            <ul role="menubar">
+              <li ng-repeat="pen in pens | filter:penTitle">
+                <p ng-click="makeActivePen(pen)">{{pen.title}}</p>
+              </li>
+            </ul>
+          </nav>
+          <h3 ng-show="yesText">Welcome To the IndigoSlate Pattern Library</h3>
 
+          <div ng-show="yesPens" >
+            <iframe class="flex-item child"
+              height='680'
+              scrolling='no'
+              title="{{activePen.id}}"
+              ng-src="{{codePenUrl}}"
+              allowtransparency='true'
+              allowfullscreen='true'
+              frameborder='no'
+              style='width: 50%;'>
+              <a href='http://codepen.io/IndigoSlate/pen/{{activePen.id}}/'> {{activePen.id}} </a> by Indigo Slate UI Code Library  (<a href='http://codepen.io/IndigoSlate'> @IndigoSlate</a>) on <a href='http://codepen.io'>CodePen</a>.
+            </iframe>
+          </div>
+        </div>
+      </main>
 
-
-    <main role="main">
-      <!-- <div ng-repeat="pen in pens"> this is where the toggle should be -->
-        <p>Pen<a href="#" ng-click="showDetails = ! showDetails">{{pen.title}}</a></p>
-
-        <p data-height="265" data-theme-id="dark" data-slug-hash="{{pen.id}}" data-default-tab="html,result" data-user="IndigoSlate" data-embed-version="2" data-pen-title="{{pen.id}}" data-preview="true" data-editable="true" class="codepen">See the Pen <a href="http://codepen.io/IndigoSlate/pen/{{pen.id}}/">{{pen.id}}</a> by Indigo Slate UI Code Library  (<a href="http://codepen.io/IndigoSlate">@IndigoSlate</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-        </p>
-    </main>
-  </div>
-
-
-      </footer>
-
-      <!-- <script src='src/js/main.js'></script> -->
-      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-    </body>
+    <footer>
+    </footer>
+  </body>
 </html>
