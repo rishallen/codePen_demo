@@ -8,8 +8,16 @@ routerApp.config(["$locationProvider", "$routeProvider", function($locationProvi
 
   $routeProvider
   .when("/", { //defined as main page
-    templateUrl: "index.html",
-    controller: 'PenListCtrl'
+    templateUrl: "build/views/home.html"
   })
-  .otherwise("/");
+  // .when("/pens/:tags", {
+  //   templateUrl: "views/tag-name.html",
+  //   controller: 'TagNameCtrl'
+  // })
+  // .when("/pen/:id", {
+  //   templateUrl: "views/my-pen.html",
+  //   controller: 'MyPenCtrl'
+  // })
+
+  // .otherwise("/");
  }]);

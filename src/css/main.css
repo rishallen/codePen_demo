@@ -1,7 +1,113 @@
-{
-"version": 3,
-"mappings": "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",
-"sources": ["partials/__reset.scss","partials/__mixins.scss","partials/__globals.scss","partials/__grid.scss","partials/__navigation.scss","partials/__hero-panel.scss","partials/__quick-links-panel.scss","partials/__best-world-panel.scss","partials/__cloud-tech-panel.scss","partials/__benefits-panel.scss","partials/__footer.scss"],
-"names": [],
-"file": "main.css"
-}
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/** Media Query Mixins, Breakpoints **/
+/*** MIXIN: Flexbox ************************************************************/
+/* Globals
+*************************************************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  font: 17px/1.4 'Segoe UI', 'Segoe', Verdana, Arial, sans-serif; }
+
+body {
+  background-color: #fff; }
+
+section.header {
+  background-color: pink;
+  height: 90px; }
+  section.header h1 {
+    color: #000; }
+
+.panel {
+  position: relative;
+  border: 1px solid red; }
+
+.panel__content {
+  max-width: 1960px;
+  margin: 0 auto;
+  border: 1px solid green; }
+
+.panel__layout {
+  max-width: 1540px;
+  margin: 0 auto;
+  border: 2px solid orange; }
+
+.panel_title {
+  color: #000;
+  padding-bottom: 10px; }
+  .panel_title h1 {
+    font-size: 45px;
+    font-weight: 600; }
+  .panel_title h2 {
+    font-size: 25px;
+    font-weight: 600; }
+  .panel_title p {
+    font-size: 15px;
+    font-weight: 300px; }
+
+iframe {
+  border: 8px solid #cecece; }
+
+.sidenav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* !nowrap! | wrap | wrap-reverse */
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
+  /* !row! | row-reverse | column | column-reverse */
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* !flex-start!, flex-end, center, space-between, space-around */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  border: 2px solid yellow; }

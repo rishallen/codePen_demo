@@ -61,3 +61,33 @@ section.header {
 iframe {
   border: 8px solid rgb(206, 206, 206);
 }
+.sidenav {
+  @include flexbox;
+  @include flex-wrap(nowrap);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  border: 2px solid yellow;
+  // .flex-item1 {
+  //   background: grey;
+  //   ul {
+  //     @include flexbox;
+  //     @include flex-wrap(wrap);
+  //     @include flex-direction(column);
+  //     @include justify-content(left);
+  //     margin: 10px;
+  //     border: 2px solid brown;
+  //     li {
+  //       line-height: 35px;
+  //       @include respond-to(for-tablet-landscape-up) {
+  //       }
+  //       .flex-item {
+  //       @include flexbox;
+  //       // @include justify-content (flex-end);
+  //       margin-right: 10px;
+  //
+  //       border: 2px solid orange;
+  //       }
+  //     }
+  //   }
+  // }
+}

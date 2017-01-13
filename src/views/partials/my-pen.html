@@ -1,0 +1,18 @@
+<h3 ng-show="yesText">Welcome To the IndigoSlate Library</h3>
+
+
+<div ng-show="yesPens">
+  <iframe class="flex-item child"
+    height='680'
+    scrolling='no'
+    title="{{activePen.id}}"
+    ng-src="{{codePenUrl}}"
+    allowtransparency='true'
+    allowfullscreen='true'
+    frameborder='no'
+    style='width: 100%;'>
+    <a href='http://codepen.io/IndigoSlate/pen/{{activePen.id}}/'> {{activePen.id}}</a>
+    by Indigo Slate UI Code Library
+    (<a href='http://codepen.io/IndigoSlate'> @IndigoSlate</a>) on <a href='http://codepen.io'>CodePen</a>.
+  </iframe>
+</div>

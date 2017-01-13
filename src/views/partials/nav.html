@@ -1,0 +1,12 @@
+
+<div class="flex-container sidenav panel__content">
+ <!-- <p><input type="text" ng-model="penTitle.title"></p> -->
+   <nav role="navigation" class="flex-item1 child">
+     <ul role="menubar">
+       <li ng-repeat="pen in pens | filter:penTitle">
+         <p ng-click="makeActivePen(pen)">{{pen.title}}</p>
+       </li>
+     </ul>
+   </nav>
+   <my-pen></my-pen>
+ </div>
